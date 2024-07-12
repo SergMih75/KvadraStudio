@@ -1,0 +1,40 @@
+.animation-scale-active {
+    animation: scaleAnimation 800ms linear  forwards;
+    -webkit-animation: scaleAnimation 800ms linear  forwards;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        scale: 0;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+.animation-translate {
+    transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+
+	transition: 800ms linear;
+	-webkit-transition: 800ms linear;
+	-moz-transition: 800ms linear;
+	-ms-transition: 800ms linear;
+	-o-transition: 800ms linear;
+}
+
+// .animation-translate-left {
+//     transform: translateX(-100%);
+//     -webkit-transform: translateX(-100%);
+//     -moz-transform: translateX(-100%);
+//     -ms-transform: translateX(-100%);
+//     -o-transform: translateX(-100%);
+//     transition: 800ms linear;
+//     -webkit-transition: 800ms linear;
+//     -moz-transition: 800ms linear;
+//     -ms-transition: 800ms linear;
+//     -o-transition: 800ms linear;
+// }

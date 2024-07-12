@@ -1,0 +1,109 @@
+.video {
+    margin-top: 20px;
+    padding: 161px 16px;
+    margin-bottom: 155px;
+
+    position: relative;
+
+    background-image: url(../img/generalVideoBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__start {
+        width: 50px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        animation: shadowVideoBtn 2500ms linear  infinite reverse;
+        -webkit-animation: shadowVideoBtn 2500ms linear  infinite reverse;
+    }
+
+    &__btn {
+        // width: 20px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #fff;
+
+    }
+}
+
+.title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 132%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.calculate {
+    width: 210px;
+    aspect-ratio: 1/1;
+
+    border: none;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -100px;
+    left: calc(50% - 105px);
+
+    cursor: pointer;
+    background-color: #333333;
+    outline: .8px solid $GeneralBg;
+    outline-offset: 12px;
+
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #fff;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow:0 0 10px 3px #070707;
+
+    animation: shadowBtn 1500ms linear  infinite reverse;
+    -webkit-animation: shadowBtn 1500ms linear  infinite reverse;
+}
+
+@keyframes shadowBtn {
+    0% {
+    box-shadow:0 0 10px 3px #070707;
+    text-shadow: 0 0 2px #fff;
+    }
+    50% {
+        box-shadow:0 0 10px 5px #070707;
+        text-shadow: 0 0 8px #fff;
+    }
+    100% {
+    box-shadow:0 0 10px 3px #070707;
+    text-shadow: 0 0 2px #fff;
+    }
+}
+
+@keyframes shadowVideoBtn {
+    0% {
+    box-shadow:0 0 0 0 #fff;
+    }
+    50% {
+        box-shadow:0 0 8px 0 #fff, 0 0 6px 0 #fff inset;
+        // box-shadow:0 0 8px 0 #fff inset;
+    }
+    100% {
+    box-shadow:0 0 0 0 #fff;
+    }
+}

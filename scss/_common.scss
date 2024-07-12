@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $textColor;
+}
+
+body {
+    background-color: $GeneralBg;
+}
+
+.wrapper {
+    // max-width: 1920px;
+    // min-width: 375px;
+    width: clamp(375px, 100%, 1920px);
+    margin: 0 auto;
+    overflow: hidden;
+    // padding-top: 20px;
+}
+
+.test {
+    height: 10000px;
+}
