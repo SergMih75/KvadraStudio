@@ -1,0 +1,106 @@
+.portfolio {
+
+    &__title {
+        margin: 50px 16px 20px 16px;
+
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 119%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+    &__text {
+        margin: 0px 16px 30px 16px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #333;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .control {
+        margin-bottom: 30px;
+        padding: 0 16px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn {
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #555;
+
+        cursor: pointer;
+
+        border: none;
+        background-color: #ffffff;
+
+        &-active {
+            font-weight: 600;
+            border-bottom: 2px solid #333;
+            cursor: none;
+        }
+    }
+
+    .persons,
+    .public {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .public {
+        display: none;
+        flex-direction: column-reverse;
+    } 
+
+
+    .item {
+        &__img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .description {
+        margin: 20px 16px 50px;
+
+        &__title,
+        &__size,
+        &__address,
+        &__link {
+            margin-bottom: 12px;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        &__address {
+            margin-bottom: 16px;
+
+            color: #888888;
+        }
+
+        &__link {
+            text-decoration: underline;
+            text-shadow: 0 0 8px #333333ad;
+        }
+    }
+}

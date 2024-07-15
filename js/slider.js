@@ -36,7 +36,7 @@ controlItem.forEach(controlItem => {
 
 // Функция смены отзыва в зависимости от реакции на элементы управления (нажатие на кнопки или полоски отзывов). Слайдер поддерживает бесконечность прокрутки. При достижении последнего отзыва и по нажатии на стрелку вправо, открывается первый отзыв и наоборот
 
-function getFeedback(step, firstInit, jump) {
+function getFeedback(step, firstInit) {
 	let nowActive
 	for (i = 0; i < feedbackItem.length; i++) {
 		if (firstInit === true) {

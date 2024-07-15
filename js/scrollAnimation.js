@@ -73,8 +73,8 @@ document.addEventListener('scroll', () => {
 	translateBlockAnimation.forEach(item => {
 		// Сдвигаем блок в границы экрана при прокручивании до него
 		if (
-			item.getBoundingClientRect().top -
-				(window.innerHeight - item.clientHeight) <
+			(item.getBoundingClientRect().top -
+				(window.innerHeight - 20)) <
 			0
 		) {
 			item.style.transform = `translateX(${0})`
@@ -91,7 +91,7 @@ document.addEventListener('scroll', () => {
 
 		//Убираем блок за экран при его опускании вниз границ экрана
 		if (
-			item.getBoundingClientRect().top + 0 - (window.innerHeight + 0) > 0 &&
+			item.getBoundingClientRect().top - (window.innerHeight + 5) > 0 &&
 			item.style.transform == 'translateX(0px)'
 		) {
 			item.style.transform = `translateX(${100}%)`

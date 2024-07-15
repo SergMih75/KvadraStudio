@@ -14,27 +14,13 @@
 
 .animation-translate {
     transform: translateX(100%);
-	-webkit-transform: translateX(100%);
-	-moz-transform: translateX(100%);
-	-ms-transform: translateX(100%);
-	-o-transform: translateX(100%);
-
-	transition: 800ms linear;
-	-webkit-transition: 800ms linear;
-	-moz-transition: 800ms linear;
-	-ms-transition: 800ms linear;
-	-o-transition: 800ms linear;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: 500ms linear;
+    -webkit-transition: 500ms linear;
+    -moz-transition: 500ms linear;
+    -ms-transition: 500ms linear;
+    -o-transition: 500ms linear;
 }
-
-// .animation-translate-left {
-//     transform: translateX(-100%);
-//     -webkit-transform: translateX(-100%);
-//     -moz-transform: translateX(-100%);
-//     -ms-transform: translateX(-100%);
-//     -o-transform: translateX(-100%);
-//     transition: 800ms linear;
-//     -webkit-transition: 800ms linear;
-//     -moz-transition: 800ms linear;
-//     -ms-transition: 800ms linear;
-//     -o-transition: 800ms linear;
-// }

@@ -14,7 +14,7 @@
             <nav class="menu">
                 <button class="burger"></button>
                     <ul class="menu__block-mobile">
-                        <li><a href="#" class="menu__item">Портфолио</a></li>
+                        <li><a href="#portfolio" class="menu__item">Портфолио</a></li>
                         <li><a href="#" class="menu__item">Услуги</a></li>
                         <li><a href="#" class="menu__item">Цены</a></li>
                         <li><a href="#" class="menu__item">На заказ</a></li>
@@ -116,10 +116,110 @@
             </div>
         </section>
 
+        <section class="portfolio  animation-translate">
+            <h2 class="portfolio__title">Наше портфолио</h2>
+            <p class="portfolio__text">Все фото наших работ - это 100% настоящие фотографии выполненных нами проектов.</p>
+            <div class="portfolio__block">
+                <div class="control">
+                    <button id="personal" class="btn btn-active">Частные проекты</button>
+                    <button id="public" class="btn">Общественные проекты</button>
+                </div>
+
+                <div class="persons">
+                    <div class="item">
+                        <img class="item__img" src="./img/portfolio/persons/persons_1.png" alt="Неоклассика с марокканскими мотивами">
+                        <div class="description">
+                            <h3 class="description__title">Неоклассика с марокканскими мотивами</h3>
+                            <p class="description__size">109 м2</p>
+                            <p class="description__address">Ярославль, Московский проспект</p>
+                            <a class="description__link" data-link="persons_1" href="#popup">Смотреть проект</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="item__img" src="./img/portfolio/persons/persons_2.png" alt="Минимализм в деталях">
+                        <div class="description">
+                            <h3 class="description__title">Минимализм в деталях</h3>
+                            <p class="description__size">73 м2</p>
+                            <p class="description__address">Ярославль, ул. Наумова</p>
+                            <a class="description__link" data-link="persons_2" href="#popup">Смотреть проект</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="item__img" src="./img/portfolio/persons/persons_3.png" alt="Таунхаус в неоклассическом стиле">
+                        <div class="description">
+                            <h3 class="description__title">Таунхаус в неоклассическом стиле</h3>
+                            <p class="description__size">145 м2</p>
+                            <p class="description__address">Ярославль, ул. Космонавтов</p>
+                            <a class="description__link" data-link="persons_3" href="#popup">Смотреть проект</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="item__img" src="./img/portfolio/persons/persons_4.png" alt="Изящная неоклассика">
+                        <div class="description">
+                            <h3 class="description__title">Изящная неоклассика</h3>
+                            <p class="description__size">105 м2</p>
+                            <p class="description__address">Ярославль, ул. Большая Октябрьская</p>
+                            <a class="description__link" data-link="persons_4" href="#popup">Смотреть проект</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="public">
+                    <div class="item">
+                        <img class="item__img" src="./img/portfolio/persons/persons_1.png" alt="Неоклассика с марокканскими мотивами">
+                        <div class="description">
+                            <h3 class="description__title">Неоклассика с марокканскими мотивами</h3>
+                            <p class="description__size">109 м2</p>
+                            <p class="description__address">Ярославль, Московский проспект</p>
+                            <a class="description__link" data-link="public_1" href="#popup">Смотреть проект</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="item__img" src="./img/portfolio/persons/persons_2.png" alt="Минимализм в деталях">
+                        <div class="description">
+                            <h3 class="description__title">Минимализм в деталях</h3>
+                            <p class="description__size">73 м2</p>
+                            <p class="description__address">Ярославль, ул. Наумова</p>
+                            <a class="description__link" data-link="public_2" href="#popup">Смотреть проект</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="item__img" src="./img/portfolio/persons/persons_3.png" alt="Таунхаус в неоклассическом стиле">
+                        <div class="description">
+                            <h3 class="description__title">Таунхаус в неоклассическом стиле</h3>
+                            <p class="description__size">145 м2</p>
+                            <p class="description__address">Ярославль, ул. Космонавтов</p>
+                            <a class="description__link" data-link="public_3" href="#popup">Смотреть проект</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="item__img" src="./img/portfolio/persons/persons_4.png" alt="Изящная неоклассика">
+                        <div class="description">
+                            <h3 class="description__title">Изящная неоклассика</h3>
+                            <p class="description__size">105 м2</p>
+                            <p class="description__address">Ярославль, ул. Большая Октябрьская</p>
+                            <a class="description__link" data-link="public_4" href="#popup">Смотреть проект</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="test"></div>
+
+        <div id="popup" class="popup">
+            <div class="popup__close"></div>
+        </div>
     </div>
     <script src="./js/menu.js"></script>
     <script src="./js/scrollAnimation.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/portfolio.js"></script>
 </body>
 </html>
