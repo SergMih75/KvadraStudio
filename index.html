@@ -116,7 +116,7 @@
             </div>
         </section>
 
-        <section class="portfolio  animation-translate">
+        <section id="portfolio" class="portfolio  animation-translate">
             <h2 class="portfolio__title">Наше портфолио</h2>
             <p class="portfolio__text">Все фото наших работ - это 100% настоящие фотографии выполненных нами проектов.</p>
             <div class="portfolio__block">
@@ -214,7 +214,12 @@
         <div class="test"></div>
 
         <div id="popup" class="popup">
-            <div class="popup__close"></div>
+            <div class="gallery">
+                <div class="gallery__mask">
+                    <div class="gallery__block"></div>
+                    <a class="gallery__close" href="#portfolio">Закрыть</a>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./js/menu.js"></script>

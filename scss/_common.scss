@@ -13,28 +13,13 @@ body {
 }
 
 .wrapper {
-    // max-width: 1920px;
-    // min-width: 375px;
     width: clamp(375px, 100%, 1920px);
     margin: 0 auto;
     overflow: hidden;
-    // padding-top: 20px;
+
     position: relative;
 }
 
 .test {
     height: 10000px;
-}
-
-.popup {
-    width: 100vw;
-    height: 100vh;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    z-index: 10;
 }

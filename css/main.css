@@ -23,17 +23,6 @@ body {
   height: 10000px;
 }
 
-.popup {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-}
-
 .animation-scale-active {
   animation: scaleAnimation 800ms linear forwards;
   -webkit-animation: scaleAnimation 800ms linear forwards;
@@ -139,6 +128,58 @@ body {
   -moz-transform: rotate(-45deg) translateY(-2px) translateX(13px);
   -ms-transform: rotate(-45deg) translateY(-2px) translateX(13px);
   -o-transform: rotate(-45deg) translateY(-2px) translateX(13px);
+}
+
+.popup {
+  display: none;
+}
+.popup-active {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(49, 49, 49, 0.9725490196);
+}
+.popup .gallery {
+  width: 90vw;
+  height: 90%;
+  padding: 25px 0 0;
+  position: relative;
+}
+.popup .gallery__mask {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.popup .gallery__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.popup .gallery__item {
+  width: 100%;
+  object-fit: contain;
+}
+.popup .gallery__close {
+  display: none;
+}
+.popup .gallery__close-active {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: red;
 }
 
 .video {

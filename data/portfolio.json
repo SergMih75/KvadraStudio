@@ -1,0 +1,66 @@
+[
+	{
+		"interior": "persons_1",
+		"link": "./img/portfolio/portfolio_slider/persons_1-1.jpg"
+	},
+	{
+		"interior": "persons_1",
+		"link": "./img/portfolio/portfolio_slider/persons_1-2.jpeg"
+	},
+	{
+		"interior": "persons_1",
+		"link": "./img/portfolio/portfolio_slider/persons_1-3.jpg"
+	},
+	{
+		"interior": "persons_1",
+		"link": "./img/portfolio/portfolio_slider/persons_1-4.jpeg"
+	},
+	{
+		"interior": "persons_2",
+		"link": "./img/portfolio/portfolio_slider/persons_2-1.jpg"
+	},
+	{
+		"interior": "persons_2",
+		"link": "./img/portfolio/portfolio_slider/persons_2-2.jpg"
+	},
+	{
+		"interior": "persons_2",
+		"link": "./img/portfolio/portfolio_slider/persons_2-3.jpeg"
+	},
+	{
+		"interior": "persons_2",
+		"link": "./img/portfolio/portfolio_slider/persons_2-4.jpg"
+	},
+	{
+		"interior": "persons_3",
+		"link": "./img/portfolio/portfolio_slider/persons_3-1.jpg"
+	},
+	{
+		"interior": "persons_3",
+		"link": "./img/portfolio/portfolio_slider/persons_3-2.jpeg"
+	},
+	{
+		"interior": "persons_3",
+		"link": "./img/portfolio/portfolio_slider/persons_3-3.jpeg"
+	},
+	{
+		"interior": "persons_3",
+		"link": "./img/portfolio/portfolio_slider/persons_3-4.jpeg"
+	},
+	{
+		"interior": "persons_4",
+		"link": "./img/portfolio/portfolio_slider/persons_4-1.jpg"
+	},
+	{
+		"interior": "persons_4",
+		"link": "./img/portfolio/portfolio_slider/persons_4-2.jpg"
+	},
+	{
+		"interior": "persons_4",
+		"link": "./img/portfolio/portfolio_slider/persons_4-3.jpg"
+	},
+	{
+		"interior": "persons_4",
+		"link": "./img/portfolio/portfolio_slider/persons_4-4.jpg"
+	}
+]

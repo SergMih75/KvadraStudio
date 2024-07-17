@@ -1,0 +1,65 @@
+
+.popup {
+    display: none;
+
+    &-active {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #313131f8;
+    }
+
+    .gallery {
+        width: 90vw;
+        height: 90%;
+        padding: 25px 0 0;
+
+        position: relative;
+
+        &__mask {
+        height: 100%;
+
+        overflow: hidden;
+        overflow-y: auto;
+        }
+
+        &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+
+        &__item {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &__close {
+            display: none;
+
+            &-active {
+                display: block;
+
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                cursor: pointer;
+                color:  red;
+            }
+        }
+    }
+}
