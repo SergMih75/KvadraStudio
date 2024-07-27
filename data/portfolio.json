@@ -52,6 +52,54 @@
 		"link": "./img/portfolio/portfolio_slider/persons_4-1.jpg"
 	},
 	{
+		"interior": "public_1",
+		"link": "./img/portfolio/portfolio_slider/public_1-1.jpg"
+	},
+	{
+		"interior": "public_1",
+		"link": "./img/portfolio/portfolio_slider/public_1-2.jpeg"
+	},
+	{
+		"interior": "public_1",
+		"link": "./img/portfolio/portfolio_slider/public_1-3.jpeg"
+	},
+	{
+		"interior": "public_1",
+		"link": "./img/portfolio/portfolio_slider/public_1-4.jpg"
+	},
+	{
+		"interior": "public_2",
+		"link": "./img/portfolio/portfolio_slider/public_2-1.jpg"
+	},
+	{
+		"interior": "public_2",
+		"link": "./img/portfolio/portfolio_slider/public_2-2.jpg"
+	},
+	{
+		"interior": "public_2",
+		"link": "./img/portfolio/portfolio_slider/public_2-3.jpg"
+	},
+	{
+		"interior": "public_2",
+		"link": "./img/portfolio/portfolio_slider/public_2-4.jpg"
+	},
+	{
+		"interior": "public_3",
+		"link": "./img/portfolio/portfolio_slider/public_3-1.jpg"
+	},
+	{
+		"interior": "public_3",
+		"link": "./img/portfolio/portfolio_slider/public_3-2.jpg"
+	},
+	{
+		"interior": "public_3",
+		"link": "./img/portfolio/portfolio_slider/public_3-3.jpg"
+	},
+	{
+		"interior": "public_3",
+		"link": "./img/portfolio/portfolio_slider/public_3-4.jpg"
+	},
+	{
 		"interior": "persons_4",
 		"link": "./img/portfolio/portfolio_slider/persons_4-2.jpg"
 	},
@@ -62,5 +110,21 @@
 	{
 		"interior": "persons_4",
 		"link": "./img/portfolio/portfolio_slider/persons_4-4.jpg"
+	},
+	{
+		"interior": "public_4",
+		"link": "./img/portfolio/portfolio_slider/public_4-1.jpg"
+	},
+	{
+		"interior": "public_4",
+		"link": "./img/portfolio/portfolio_slider/public_4-2.jpg"
+	},
+	{
+		"interior": "public_4",
+		"link": "./img/portfolio/portfolio_slider/public_4-3.jpg"
+	},
+	{
+		"interior": "public_4",
+		"link": "./img/portfolio/portfolio_slider/public_4-4.jpg"
 	}
 ]

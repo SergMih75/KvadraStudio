@@ -13,14 +13,15 @@
 }
 
 .animation-translate {
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    transition: 500ms linear;
-    -webkit-transition: 500ms linear;
-    -moz-transition: 500ms linear;
-    -ms-transition: 500ms linear;
-    -o-transition: 500ms linear;
+    //transform: translateX(100%);
+    //-webkit-transform: translateX(100%);
+    //-moz-transform: translateX(100%);
+    //-ms-transform: translateX(100%);
+    //-o-transform: translateX(100%);
+    opacity: 0;
+    transition: 1000ms linear;
+    -webkit-transition: 1000ms linear;
+    -moz-transition: 1000ms linear;
+    -ms-transition: 1000ms linear;
+    -o-transition: 1000ms linear;
 }

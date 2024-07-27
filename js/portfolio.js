@@ -1,4 +1,5 @@
 const btn = document.querySelectorAll('.btn')
+const allProject = document.querySelector('.all')
 // Удаление признака активной кнопки у всех вариантов портфолио
 const removeActive = function () {
 	btn.forEach(item => {
@@ -34,8 +35,15 @@ descriptionLink.forEach(link => {
 	})
 })
 
+// Выбор фото всех проектов
+allProject.addEventListener('click', () => {
+	getPortfolioObjectData()
+	document.getElementById('popup').classList.add('popup-active')
+})
+
 // Выбор картинок по выбранному проекту для детального с ним ознакомления в popup окне слайдера. Данные по ссылкам на фотографии проектов берутся из json файла. При выборе просмотра всего портфолио - показываются все фотографии проектов по очереди по проектам.
 function getPortfolioObjectData(projectFilter) {
+	let filter
 	fetch('./data/portfolio.json')
 		.then(response => {
 			if (!response.ok) {
@@ -44,7 +52,12 @@ function getPortfolioObjectData(projectFilter) {
 			return response.json()
 		})
 		.then(jsonData => {
-			let filter = jsonData.filter(item => item.interior === projectFilter)
+			if (projectFilter !== undefined) {
+				filter = jsonData.filter(item => item.interior === projectFilter)
+			} else {
+				filter = jsonData
+			}
+
 			filter.forEach(item => {
 				let galleryImg = document.createElement('img')
 				galleryImg.classList = 'gallery__img'
@@ -59,7 +72,9 @@ function getPortfolioObjectData(projectFilter) {
 }
 // Закрытие popup окна галереи
 document.querySelector('.gallery__close').addEventListener('click', () => {
-	document.querySelector('.gallery__close').classList.remove('gallery__close-active')
+	document
+		.querySelector('.gallery__close')
+		.classList.remove('gallery__close-active')
 	document.querySelectorAll('.gallery__img').forEach(item => {
 		item.remove()
 	})

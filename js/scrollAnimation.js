@@ -72,16 +72,9 @@ document.addEventListener('scroll', () => {
 	// Анимация движения блоков через translate
 	translateBlockAnimation.forEach(item => {
 		// Сдвигаем блок в границы экрана при прокручивании до него
-		if (
-			(item.getBoundingClientRect().top -
-				(window.innerHeight - 20)) <
-			0
-		) {
-			item.style.transform = `translateX(${0})`
-			if (
-				item.classList.contains('results') &&
-				item.style.transform == 'translateX(0px)'
-			) {
+		if (item.getBoundingClientRect().top - (window.innerHeight - 20) < 0) {
+			item.style.opacity = 1
+			if (item.classList.contains('results') && item.style.opacity == 1) {
 				if (digitCounterFromResults === true) {
 					digitCounterFromResults = false
 					digitCounter(resultsData)
@@ -89,23 +82,20 @@ document.addEventListener('scroll', () => {
 			}
 		}
 
-		//Убираем блок за экран при его опускании вниз границ экрана
-		if (
-			item.getBoundingClientRect().top - (window.innerHeight + 5) > 0 &&
-			item.style.transform == 'translateX(0px)'
-		) {
-			item.style.transform = `translateX(${100}%)`
-			digitCounterFromResults = true
-			resultsData.forEach(digit=>{
-				digit.textContent = ''
-			})
+		if (item.getBoundingClientRect().top - (window.innerHeight + 5) > 0) {
+			item.style.opacity = 0
+			if (item.classList.contains('results')) {
+				digitCounterFromResults = true
+				resultsData.forEach(digit => {
+					digit.textContent = ''
+				})
+			}
 		}
 	})
 })
 
 function digitCounter(digit) {
-	digit.forEach((digit) => {
-
+	digit.forEach(digit => {
 		setTimeout(() => {
 			let step = 0
 
@@ -121,34 +111,74 @@ function digitCounter(digit) {
 				}
 				if (step < 500 && step >= 100) {
 					step = step + Math.floor(Math.random() * (50 - 2 + 1) + 2)
-						if (step >= digit.dataset.result) {
+					if (step >= digit.dataset.result) {
 						step = digit.dataset.result
 					}
 				}
 				if (step < 1000 && step >= 500) {
 					step = step + Math.floor(Math.random() * (100 - 50 + 1) + 50)
-						if (step >= digit.dataset.result) {
+					if (step >= digit.dataset.result) {
 						step = digit.dataset.result
 					}
 				}
 				if (step < 5000 && step >= 1000) {
 					step = step + Math.floor(Math.random() * (500 - 100 + 1) + 100)
-						if (step >= digit.dataset.result) {
+					if (step >= digit.dataset.result) {
 						step = digit.dataset.result
 					}
 				}
 				if (step >= 5000) {
 					step = step + Math.floor(Math.random() * (1000 - 500 + 1) + 500)
-						if (step >= digit.dataset.result) {
+					if (step >= digit.dataset.result) {
 						step = digit.dataset.result
 					}
 				}
 
 				digit.textContent = step
-				if (step >= digit.dataset.result) {
+				if (step === digit.dataset.result) {
 					clearInterval(interval)
 				}
 			}, 20)
-		}, 850)
+		}, 500)
 	})
 }
+
+// Анимация движения текста на блоке просмотра фотографий всех проектов портфолио. Запускается на экранах меньше 1080 пикселей шириной. На больших экранах статичен
+const allProjectBtn = document.querySelector('.all__mask')
+
+// Движение текста влево до конца блока
+function allProjectBtnShiftLeft(shift) {
+	const shiftAnimation = setInterval(() => {
+		shift = shift - 2
+		allProjectBtn.style.left = shift + 'px'
+
+		if (allProjectBtn.getBoundingClientRect().right - window.innerWidth <= 0) {
+			clearInterval(shiftAnimation)
+			setTimeout(() => {
+				allProjectBtnShiftRight(shift)
+			}, 250)
+		}
+	}, 50)
+}
+
+// Движение текста  в право до начала блока
+function allProjectBtnShiftRight(shift) {
+	const shiftAnimation = setInterval(() => {
+		shift = shift + 2
+		allProjectBtn.style.left = shift + 'px'
+
+		if (allProjectBtn.getBoundingClientRect().left >= 0) {
+			clearInterval(shiftAnimation)
+			setTimeout(() => {
+				allProjectBtnShiftLeft(shift)
+			}, 250)
+		}
+	}, 50)
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	let shift = 0
+	if (window.innerWidth < 1080) {
+		allProjectBtnShiftLeft(shift)
+	}
+})

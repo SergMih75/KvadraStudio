@@ -1,4 +1,5 @@
 .portfolio {
+    margin-bottom: 50px;
 
     &__title {
         margin: 50px 16px 20px 16px;
@@ -25,10 +26,10 @@
         display: flex;
         flex-direction: column;
     }
+}
 
     .control {
-        margin-bottom: 30px;
-        padding: 0 16px;
+        padding: 30px 16px;
 
         display: flex;
         justify-content: space-between;
@@ -67,7 +68,6 @@
         flex-direction: column-reverse;
     } 
 
-
     .item {
         &__img {
             width: 100%;
@@ -103,4 +103,32 @@
             text-shadow: 0 0 8px #333333ad;
         }
     }
-}
+
+    .all {
+        height: 76px;
+        position: relative;
+        display: flex;
+
+        background-color: #897163;
+
+        &__mask {
+            width: 2000px;
+            padding-left: 15px;
+
+            position: absolute;
+            left: 0;
+            top: 26px;
+
+            cursor: pointer;
+
+            & > p, 
+            p > span {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 117%;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+    }
